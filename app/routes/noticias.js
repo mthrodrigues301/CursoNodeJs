@@ -6,14 +6,14 @@ module.exports = function(app){
 
         var connection = mysql.createConnection({
             host: 'localhost',
-            user: 'matheus',
-            password: '1234',
+            user: 'root',
+            password: 'password',
             database: 'portal_noticias'
         });
 
         connection.query('select * from noticias', function(error, result){
             res.send(result);
         });
-        //res.render("noticias/noticias");
+        // res.render("noticias/noticias");
     });
 }
