@@ -1,0 +1,24 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "Site de Noticias",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusRodrigues301/CursoNodeJs.git"
+  },
+  "author": "Matheus Andrey Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusRodrigues301/CursoNodeJs/issues"
+  },
+  "homepage": "https://github.com/MatheusRodrigues301/CursoNodeJs#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
