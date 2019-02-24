@@ -15,10 +15,10 @@ var app = express();
 
 /* set view engine and view express module */
 app.set('view engine', 'ejs');
-app.set('views', '.app/views');
+app.set('views', './app/views');
 
 /* config middlewares express.static*/
-app.use(express.static('.app/public'));
+app.use(express.static('./app/public'));
 
 app.use(bodyParser.urlencoded({extended: true}));
 
