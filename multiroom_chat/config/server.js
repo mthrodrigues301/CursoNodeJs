@@ -2,7 +2,7 @@
 var express = require('express');
 
 /*import consign module */
-var consign = require('consing');
+var consign = require('consign');
 
 /* import bodyparser module */
 var bodyParser = require('body-parser');
@@ -20,7 +20,7 @@ app.set('views', '.app/views');
 /* config middlewares express.static*/
 app.use(express.static('.app/public'));
 
-app.use(bodyParser.urlencoded({extended: true});
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(expressValidator());
 
