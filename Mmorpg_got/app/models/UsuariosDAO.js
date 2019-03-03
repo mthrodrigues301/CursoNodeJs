@@ -1,17 +1,20 @@
-function UsuariosDAO(connection){
-	this._connection = connection();
+function UsuariosDAO(connection) {
+    this._connection = connection;
 }
+   
+UsuariosDAO.prototype.inserirUsuario = function(usuario, res) {
+    var dados = {
+        operacao: "inserir",
+        usuario: usuario,
+        collection: "usuarios",
+        callback: function(err, result) {
+            // res.send("olá Marilene");
+        }
+    };
 
-UsuariosDAO.prototype.inserirUsuario = function(usuario){
-	this._connection.open( function(err, mongoclient){
-		mongoclient.collection("usuarios", function(err, collection){
-			collection.insert(usuario);
+    this._connection(dados);
+};
 
-			mongoclient.close();
-		});
-	});
-}
-
-module.exports = function(){
-	return UsuariosDAO;
-}
+module.exports = function() {
+    return UsuariosDAO;
+};   
